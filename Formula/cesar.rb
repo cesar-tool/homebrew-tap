@@ -5,20 +5,20 @@
 class Cesar < Formula
   desc "Your coding agents' conversations on every machine, and a shared brain for your team"
   homepage "https://getcesar.dev"
-  version "0.2.0-beta.1"
+  version "0.2.0-beta.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.1/cesar_darwin_amd64.tar.gz"
-      sha256 "944dae7df36cf4f54a71f893358d20860f4156ade14eaab82f87daff77e20c19"
+      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.2/cesar_darwin_amd64.tar.gz"
+      sha256 "89ed45a7777a53eec43a0d7468079ba5644d464d383b52ba873b0908c36e9e14"
 
       define_method(:install) do
         bin.install "cesar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.1/cesar_darwin_arm64.tar.gz"
-      sha256 "e3665f52551b40d73820d6e94631d4db11cf5229f7d92279a8b6545ac8591db5"
+      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.2/cesar_darwin_arm64.tar.gz"
+      sha256 "0e698a2c4c82b9535f88e15b206f4a83c3570d54bb908b5b16c07d65a0480421"
 
       define_method(:install) do
         bin.install "cesar"
@@ -28,15 +28,15 @@ class Cesar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.1/cesar_linux_amd64.tar.gz"
-      sha256 "50d1159764d9457eb562ade8b7b018cd52601c343d106dc71d3d22a7a56362fd"
+      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.2/cesar_linux_amd64.tar.gz"
+      sha256 "1a98b4a80ba805968f74013d66789920cb994474438157491dcf58b3bc83c4eb"
       define_method(:install) do
         bin.install "cesar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.1/cesar_linux_arm64.tar.gz"
-      sha256 "29bcac92aff96b057a85c1054cb92c8d6af681b1b9aefb7c6d144b6758577444"
+      url "https://github.com/cesar-tool/cesar/releases/download/v0.2.0-beta.2/cesar_linux_arm64.tar.gz"
+      sha256 "5efa10e7126096847509c1a7fddd9963ffd4a30eef4fd28622e0d306b7fcf6b7"
       define_method(:install) do
         bin.install "cesar"
       end
